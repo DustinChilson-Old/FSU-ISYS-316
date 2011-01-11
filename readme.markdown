@@ -1,5 +1,4 @@
 # Ferris State University - ISYS-316
 # Advanced Object-Oriented Programming
 
-Introduces the Java platform and the essentials of non-graphical, object-oriented Java programming. Topics include primitive data types and operations, flow control, language syntax and debugging, packaged classes and methods, custom methods, strings, arrays, custom classes and subclasses, and fundamentals of object-oriented programming.
-
+Student will use Java's graphical programming and advanced features to create Object-Oriented Windows programs and applets. Topics include AWT components and layout managers, drawing, mouse and keyboard event handling, menu bars, the collections framework, exception handling, multithreading, file I/O, and client/server programming.

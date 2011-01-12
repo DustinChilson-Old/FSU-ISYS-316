@@ -1,5 +1,3 @@
-//=========================================================================
-
 import java.io.*;
 public class Lab31B {
   public static void main(String[] args) {
@@ -15,7 +13,7 @@ public class Lab31B {
         }
       } 
       catch (Exception err) {
-        System.out.println(err.getMessage());
+        System.out.println("Invalid Input");
       }
     }
   }

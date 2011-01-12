@@ -1,5 +1,3 @@
-//==================================================================================
-
 public class Lab31A {
   public static void main(String[] args) {
     String[] strings = new String[3];

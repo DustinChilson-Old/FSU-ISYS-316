@@ -17,8 +17,9 @@ cat $f >> Lab$1Combined.java
 cat <<EOF >> Lab$1Combined.java
 //==================================================================================
 EOF
-
 done
+
+chmod 400 Lab$1Combined.java
 
 rm *.class
 rm *.swp
@@ -27,4 +28,3 @@ git add .
 git commit -m "Added Lab $1"
 git push origin
 
-#more Lab$1Combined.java

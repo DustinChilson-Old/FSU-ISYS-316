@@ -1,0 +1,33 @@
+/*
+ * Dustin Chilson
+ * ISYS-316-VL1
+ *
+ */
+import java.awt.*;
+import java.awt.event.*;
+import java.applet.*;
+public class App extends Applet implements ActionListener {
+  TextField numberField;
+  Label result;
+  public void init() {
+    resize(225, 100);
+    add(new Label("Integer"));
+    numberField = new TextField(3);
+    numberField.addActionListener(this);
+    add(numberField);
+    result = new Label("Enter an integer");
+    result.setAlignment(Label.CENTER);
+    result.setFont(new Font("SansSerif", Font.BOLD, 16));
+    add(result);
+  }
+  public void actionPerformed(ActionEvent e) {
+    try {
+      int n = Integer.parseInt(numberField.getText().trim());
+      result.setText("Square is " + (n * n));
+    }
+    catch (Exception err) {
+      result.setText("Not an integer");
+    }
+  }
+}
+

@@ -1,0 +1,27 @@
+/*
+ * Dustin Chilson
+ * ISYS-316-VL1
+ *
+ */
+
+import java.awt.*;
+import java.awt.event.*;
+import java.applet.*;
+public class App extends Applet implements ActionListener {
+  Label message;
+  int surfCount;
+  public void init() {
+    resize(250, 50);
+    message = new Label("");
+    message.setAlignment(Label.CENTER);
+    message.setFont(new Font("SansSerif", Font.BOLD, 20));
+    add(message);
+  }
+  public void actionPerformed(ActionEvent e) {
+    message.setText("Surf count: " + surfCount);
+  }
+  public void surf() {
+    surfCount++;
+  }
+}
+

@@ -7,7 +7,7 @@
 import java.awt.*;
 import java.awt.event.*;
 import java.applet.*;
-public class App extends Applet implements ActionListener {
+public class App extends Applet {
   Label message;
   Frame popup;
   public void init() {
@@ -25,7 +25,7 @@ public class App extends Applet implements ActionListener {
       popup.setUndecorated(true);
     }
   }
-  public void stop() {
+  public void start() {
     popup.dispose();
     popup = null;
   }

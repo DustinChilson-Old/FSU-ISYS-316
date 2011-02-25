@@ -1,0 +1,49 @@
+/*
+ * Dustin Chilson
+ * ISYS-316-VL1
+ *
+ */
+import java.awt.*;
+import java.awt.event.*;
+import java.applet.*;
+public class App extends Applet {
+  public void init() {
+    resize(250, 50);
+    setLayout(new BorderLayout());
+    int x = Integer.parseInt(getParameter("value"));
+    Label message = new Label(x + " squared is " + (x * x));
+    message.setAlignment(Label.CENTER);
+    message.setFont(new Font("SansSerif", Font.BOLD, 18));
+    add(message, BorderLayout.CENTER);
+  }
+}
+// ===============================================================================
+<html style="zoom: 100%; ">
+    <head>
+        <script type="text/javascript">
+            window["_gaUserPrefs"] = { ioo : function() { return true; } }
+        </script>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Applet Test Page</title>
+    </head>
+    <body>
+        <h2 align="center">
+            <span style="font-weight: 400"> 
+                <font face="Courier New" size="2">App.html</font>
+            </span>
+        </h2>
+        <h2 align="center">
+            <b>Applet Test Page</b>
+        </h2>
+        <p align="center">
+            This page launches a 300 x 200 pixel applet named:&nbsp;&nbsp; 
+            <font face="Courier New" size="2">App.class</font>
+        </p>
+        <p align="center">
+            <applet code="App" width="300" height="200">
+                <param name="number" value="9" />
+            </applet>
+        </p>
+    </body>
+</html>
+

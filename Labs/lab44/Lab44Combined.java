@@ -17,6 +17,7 @@ public class Lab44A {
       BufferedReader fromServer = new BufferedReader(is);
       PrintWriter toServer = new PrintWriter(s.getOutputStream());
       toServer.println("FSU");
+      toServer.flush();
       System.out.println(fromServer.readLine());
       System.out.println(fromServer.readLine());
       System.out.println(fromServer.readLine());
@@ -36,7 +37,7 @@ import java.net.*;
 import java.text.*;
 public class Lab44B {
   public static void main(String[] args) {
-    int port = 7000;
+    int port = 4567;
     try {
       ServerSocket ss = new ServerSocket(port);
       System.out.println("Server active");)
@@ -73,11 +74,12 @@ import java.net.*;
 import javax.swing.*;
 public class Lab44C {
   public static void main(String[] args) {
+    int port = 7000;
     try {
       Socket s = new Socket("localhost", port);
       ObjectInputStream fromServer = new InputStreamReader(s.getInputStream());
       System.out.println("Connected to server");
-      JFrame frame = new JFrame;
+      JFrame frame = (JFrame) fromServer.readObject();
       System.out.println("Frame received from server");
       frame.setVisible(true);
       fromServer.close();

@@ -3,7 +3,7 @@ import java.net.*;
 import java.text.*;
 public class Lab44B {
   public static void main(String[] args) {
-    int port = 7000;
+    int port = 4567;
     try {
       ServerSocket ss = new ServerSocket(port);
       System.out.println("Server active");)

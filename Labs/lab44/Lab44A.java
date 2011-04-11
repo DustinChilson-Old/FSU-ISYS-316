@@ -10,6 +10,7 @@ public class Lab44A {
       BufferedReader fromServer = new BufferedReader(is);
       PrintWriter toServer = new PrintWriter(s.getOutputStream());
       toServer.println("FSU");
+      toServer.flush();
       System.out.println(fromServer.readLine());
       System.out.println(fromServer.readLine());
       System.out.println(fromServer.readLine());

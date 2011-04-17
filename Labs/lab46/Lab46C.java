@@ -3,7 +3,7 @@ public class Lab46C {
     Sub t1 = new Sub();
     t1.start();
     for (int i = 1; i <= 1000; i++) {
-      t1.setPriority(Thread.MAX_PRIORITY); // YOUR CODE GOES HERE
+      t1.yield(); // YOUR CODE GOES HERE
     }
     System.out.println("Main is done");
   }
